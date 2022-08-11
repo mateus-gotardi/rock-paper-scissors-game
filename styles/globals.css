@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 html,
 body {
+  color:white;
   padding: 0;
   margin: 0;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+  background: radial-gradient(circle, #1F3756 50%, #141539);
+  overflow-x: hidden;
 }
 
 a {
@@ -10,5 +14,6 @@ a {
 }
 
 * {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   box-sizing: border-box;
 }
