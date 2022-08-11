@@ -21,6 +21,7 @@ export const Step3Styles = styled.div`
             0 0 0 20px rgba(255, 255, 255, 0.09),
             0 0 0 40px rgba(255, 255, 255, 0.06),
             0 0 0 60px rgba(255, 255, 255, 0.03);
+        transition: box-shadow 1s ease;
     }
 display:flex;
 align-items:center;
