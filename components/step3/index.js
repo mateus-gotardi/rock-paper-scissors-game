@@ -3,7 +3,7 @@ import { Cell, colors } from '..'
 import { useEffect, useState } from "react";
 
 export default function Step3({ choose, house, winner, playAgain }) {
-    const  [w, setW] = useState(window.innerWidth);
+    const [w, setW] = useState(window.innerWidth);
     const [step4, setStep4] = useState(false)
     const [gradient, setGradient] = useState('')
 
@@ -11,7 +11,7 @@ export default function Step3({ choose, house, winner, playAgain }) {
         if (!step4) {
             setTimeout(() => {
                 setStep4(true)
-            }, 2000)
+            }, 100)
         }
     }, [setStep4])
 
@@ -60,11 +60,11 @@ export default function Step3({ choose, house, winner, playAgain }) {
                     </>
                 }
             </div>
-            {w <= 450 && step4 ? 
-            <div className="bottom">
-                <h1>{winner}</h1>
-                <button className='playAgain' onClick={(e) => playAgain(e)}>PLAY AGAIN</button>
-            </div>:<></>}
+            {w <= 450 && step4 ?
+                <div className="bottom">
+                    <h1>{winner}</h1>
+                    <button className='playAgain' onClick={(e) => playAgain(e)}>PLAY AGAIN</button>
+                </div> : <></>}
         </Step3Styles>
     )
 }

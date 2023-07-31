@@ -19,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     if (house !== '') {
-      setTimeout(() => getWinner(), 4000)
+      setTimeout(() => getWinner(), 200)
     }
   }, [house])
 
@@ -56,7 +56,7 @@ export default function Home() {
     setHouse(options[random])
     setTimeout(() => {
       setStep(3)
-    }, 2000)
+    }, 200)
   }
   return (
     <div>
